@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/devibeans.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/go.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	
+
+	
+		<div class="content">
+			<!-- <p class="title">Snippy</p> -->
+			<img src="New Project.svg" style="height: 150px; width: 300px; margin: 0  auto;">
+			<p class="description">Snippy helps you create and share your code snippets</p>
+			<p class="sub">Its fast and easy to use!</p>
+		</div>
+
+			
+		<div class="my-container">
+			<div id="capture">
+			<div class="outer">
+				
+			<!-- <p contenteditable="true" class="board code" style="z-index: 99999; ">
+				const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}
+//this a comment</p> -->
+			<pre><code class="code" contenteditable="true">imageBox.style.display = "none";
+function save(){
+html2canvas(document.querySelector("#capture")).then(canvas => {
+document.body.appendChild(canvas).setAttribute("id", "canvas");
+var canvas = document.getElementById("canvas");
+var dataURL = canvas.toDataURL();
+console.log(dataURL);
+imageBox.src = dataURL;
+				
+link.setAttribute("href", imageBox.src);
+});
+	}
+			
+			</code></pre>
+							
+						
+			<div class="custom">
+				<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 19" width="41" height="19"><defs><image  width="41" height="19" id="img1" href="data:image/png;base64,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"/></defs><style></style><use  href="#img1" x="0" y="0"/></svg>
+			</div>	
+				
+			</div>
+			</div>
+			
+				<div class="panel">
+					<input type="color" id="backgroundColor" onchange="recolor()"/>
+				 <label class="dropdown" onclick="save()">
+						<div class="dd-button" >download</div>
+						<input type="checkbox" class="dd-input" id="test">
+						<ul class="dd-menu">
+							<a id="link" href="download.png"download="code"><li>PNG</li></a>
+						  <li>JPG</li>
+						</ul>
+					</label>
+					
+					<div class="dropdown show">
+						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Dropdown link
+						</a>
+					  
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						  <a class="dropdown-item" href="#">Action</a>
+						  <a class="dropdown-item" href="#">Another action</a>
+						  <a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					  </div>
+					<!-- <button id="saveBtn" onclick="save()"><a id='link' href='download.png' download='code'>PNG</a><span>Export</span> <i class="bi bi-download"></i></button> -->
+					<button onclick="themer()">theme <i class="bi bi-palette-fill"></i></button>
+					<button onclick="beautify()">beautify</button>
+					<button onclick="">share <i class="bi bi-share"></i></button>
+					
+				</div>
+			</div>
+
+
+
+				
+		</div>
+
+		
+<div class="foot">
+	<div>
+		<div class="about">about</div>
+		<div class="source">source</div>
+		<div class="privacy">privacy</div>
+	</div>
+	<div class="created-by">created by &copy; Siward Deco</div>
+</div>
+	
+
+		
+		
+		
+	
+
+
+	
+	<!-- <div class="paper blue">
+		<div class="top-tape"></div>
+		<p style="z-index: 999; max-width: 300px;" contenteditable="true">Edit me. . .</p>
+	  </div> -->
+
+
+
+<img id="image"/>
+
+
+<style>
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<script src="htmlToCanvas.js"></script>
+<script>
+var count = 0;
+var themes = ["https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/codepen-embed.min.css",
+	"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/brown-paper.min.css",
+	"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/docco.min.css",
+	"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/felipec.min.css",
+	"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/foundation.min.css",
+	"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/github-dark-dimmed.min.css",
+	"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/gml.min.css",
+	"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/googlecode.min.css",
+	"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/gradient-dark.min.css",
+	"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/gradient-light.min.css"
+]
+
+
+function themer(){
+	count += 1
+	if(count >= themes.length){count = 0}
+	document.getElementById("theme").setAttribute("href", themes[count])
+}
+
+
+
+
+var box = document.getElementById("capture");
+var bgColor = document.getElementById("backgroundColor");
+bgColor.value = "#ffffff";
+box.style.background= bgColor.value;
+
+
+function recolor(){
+	box.style.background= bgColor.value;
+}
+
+var imageBox = document.getElementById("image");
+var linker = document.getElementById("link");
+
+imageBox.style.display = "none";
+
+
+// let beautify;
+
+function save(){
+	
+html2canvas(document.querySelector("#capture")).then(canvas => {
+    document.body.appendChild(canvas).setAttribute("id", "canvas");
+	 var canvas = document.getElementById("canvas");
+		var dataURL = canvas.toDataURL();
+console.log(dataURL);
+imageBox.src = dataURL;
+
+	linker.setAttribute("href", imageBox.src);
+});
+alert("saved!")
+}
+
+document.querySelectorAll('pre code').forEach((el) => {
+    hljs.highlightElement(el);
+  });
+
+function beautify(){
+alert("done: beautify")
+  document.querySelectorAll('pre code').forEach((el) => {
+    hljs.highlightElement(el);
+  });
+
+  save();
+//   document.querySelectorAll('p.code').forEach(el => {
+//   // then highlight each
+//   hljs.highlightElement(el);
+// })
+
+};
+
+
+var saveBtn = document.getElementById("saveBtn");
+var timer = 3;
+
+
+// saveBtn.onclick = function(){
+// 	save();
+// 	if(timer > 0){
+// 	setTimeout(function(){timer-=1;
+// 		saveBtn.innerHTML = timer;
+// 	if(timer == 0){
+// 		saveBtn.innerHTML = "<a id='link' download='code'>PNG</a>";
+// 		}
+// },1000);
+	
+// }
+
+// };
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    	<!--bootstrap-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--boostrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!--highlight.js-->
+    <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/devibeans.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/go.min.js"></script>
+
+
+
+    <title>Snippy</title>
+</head>
+<body>
+    <div class="container">
+        <a href="https://github.com/PhilipDeco20/Snippy"><div class="github"><i class="bi bi-github"></i> Github</div></a>
+
+
+        <div class="writeup">
+            <img src="css/images/New Project.svg" style="height: 100px; width: 250px; margin: 0  auto;">
+            <p class="first">Snippy helps you create and share short <br/>beautified versions of your code</p>
+            <p class="second">Fast and easy to use snippet maker</p>
+        </div>
+
+        <div class="outer">
+            <div id="capture">
+                <div class="my-card">
+                <div class="my-box">
+                    <!--the editor himself-->
+                    <div  class="code" contenteditable="true">console.log("hello world!")</div>
+
+                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 19" width="41" height="19"><defs><image  width="41" height="19" id="img1" href="data:image/png;base64,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"/></defs><style></style><use  href="#img1" x="0" y="0"/></svg>
+                </div>
+                <!-- <div class="custom"> -->
+                    
+                <!-- </div>	 -->
+            </div>
+            </div>
+        </div>
+
+        <div class="panel">
+        
+            <input type="color" id="backgroundColor" onchange="recolor()"/>
+            <div class="dropdown show">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="node">themes</span>
+                  <i class="bi bi-palette-fill"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" onclick="theme1()">theme 1</a>
+                  <a class="dropdown-item" onclick="theme2()">theme 2</a>
+                  <a class="dropdown-item"  onclick="theme3()">theme 3</a>
+                  <a class="dropdown-item"  onclick="theme4()">theme 4</a>
+                  <a class="dropdown-item"  onclick="theme5()">theme 5</a>
+                </div>
+            </div>
+            <!-- <button onclick="beautify()"><span>beautify</span><i class="bi bi-palette-fill"></i></button> -->
+            <button onclick=""><span>share</span> <i class="bi bi-share"></i></button>
+            
+            <div class="dropdown show" onclick="save()">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="node" >download</span>
+                  <i class="bi bi-download"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item"  id="link" href="download.png"download="code">PNG</a>
+                  <!-- <a class="dropdown-item" href="#">JPG</a>
+                  <a class="dropdown-item" href="#">PNG</a>
+                  <a class="dropdown-item" href="#">SVG</a> -->
+                </div>
+            </div>
+
+            
+        </div> 
+
+        <!--image renderer remains invisible to the physical eyes but helps the canvas-->
+        <img class="hidden" style="display: none" id="image"/>
+       
+        
+    </div>
+    
+    <div class="footer">
+        <p>Snippy by <a class="footLink" href="https://x.com/chukwunafu?s=09">&#60;Siward Deco/&#62;</a> &copy; 2020 <br/></p>
+    </div>
+
+<script src="js/htmlToCanvas.js"></script>
+<script src="js/snippy.js"></script>
+<script>
+
+</script>
+
+
+</body>
+</html>
